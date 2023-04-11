@@ -1,0 +1,13 @@
+
+footer, header { text-align: center;}
+body {background-color: bisque; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+nav img {width: 50px; border: 20px; }
+header>img {width: 30pc;}
+nav {background-color: grey; padding: 5px; margin: 10px;}
+nav a{color:white}
+p {text-align: justify;}
+
+img {text-align: justify;}
+body div a img {width:30px;}
+
+hr {border: 1px dashed black; }

@@ -1,0 +1,27 @@
+header 
+{
+text-align: center;
+background-color: wheat
+}
+
+/* comment */
+header>img {width: 20pc; border: 20 px solid red; color: rgba(146, 114, 250, 0.5);}
+
+nav img {width: 50px; border: 20px; }
+
+span {background-color: antiquewhite;}
+
+#fundo_laranja {background-color: rgba(127, 255, 212, 0.50);}
+
+.fundo_amarelo {background-color: rgba(240, 128, 128, 0.50);}
+
+#name{padding: 10px;}
+#age,#message {background-color: orange; border: 5px solid red; margin: 30px;}
+
+h1,h2,h3 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+footer{background-color: rgba(146, 114, 250, 0.5); color: yellowgreen ; border:2 px solid black ;}
+
+hr{border: 20px solid blue;}
+
+form{color: red; background-color: aquamarine; border-width: 30px 15px;; }

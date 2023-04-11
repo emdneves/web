@@ -1,0 +1,10 @@
+header 
+{
+    text-align: center;
+    background-color: red
+}
+/* comment */
+header>img
+{
+    width: 2000;
+}

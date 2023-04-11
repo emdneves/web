@@ -1,0 +1,25 @@
+
+footer, header { text-align: center;}
+body {background-color: bisque; font-family: 'Cutive Mono', monospace;
+    font-family: 'Major Mono Display', monospace;
+    font-family: 'Poppins', sans-serif;}
+ 
+    
+nav img {width: 50px; border: 20px; }
+header>img {width: 30pc;position: sticky; top:0}
+nav {background-color: grey; padding: 5px; margin: 10px;}
+nav a{color:white; text-decoration: overline underline;}
+p {text-align: justify; text-transform: lowercase; text-underline-offset:4px; text-decoration: underline; text-indent:25px;word-spacing:-1px;text-shadow: 1px 1px 3px red;}
+
+img {text-align: justify;}
+body div a img {width:30px; text-align: center;;}
+
+hr {border: 1px dashed black; } 
+
+.fa-codepen{text-align:center; color:red; font-size:30px; ;}
+
+h1:hover{color: red}
+
+h2:hover{display: none;}
+
+h3{float: inline-end;}
