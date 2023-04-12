@@ -1,0 +1,14 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2324 2324" width="512" height="500">
+	<title>logo_mh-pdf</title>
+	<defs>
+		<clipPath clipPathUnits="userSpaceOnUse" id="cp1">
+			<path d="m0 0h2324v2324h-2324z"/>
+		</clipPath>
+	</defs>
+	<style>
+		.s0 { fill: none;stroke: #2aa3da;stroke-linecap: round;stroke-linejoin: round;stroke-width: 45.4 } 
+	</style>
+	<g id="Page 1" clip-path="url(#cp1)">
+		<path id="Path 2" class="s0" d="m2290.2 1182.9h-2254.4m2254.4-1154.1h-2254.4m0 0v2267.7m0 0h2254.4m0 0v-2267.7m-2254.4-0.1l942.6 2148.4m0 0l9.7 17.3m0 0l11.4 16.2m0 0l12.8 15.1m0 0l14.3 13.8m0 0l15.5 12.3m0 0l16.6 10.8m0 0l17.5 9.2m0 0l18.4 7.4m0 0l19 5.7m0 0l19.5 3.7m0 0l19.7 1.9m0 0h19.8m0 0l19.7-1.9m0 0l19.5-3.7m0 0l19-5.7m0 0l18.4-7.4m0 0l17.5-9.2m0 0l16.7-10.8m0 0l15.5-12.3m0 0l14.2-13.8m0 0l12.9-15.1m0 0l11.3-16.2m0 0l9.8-17.3m0 0l943.1-2148.4"/>
+	</g>
+</svg>
