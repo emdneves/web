@@ -50,7 +50,7 @@ body
     font-size: 80%;
     padding: 0.75rem;
     color: rgb(42, 163, 218);
-    border: 1px dotte rgb(42, 163, 218);
+    border: 1px dotted rgb(42, 163, 218);
 }
 
 /*controlls the font of the brand top left corner */
@@ -99,7 +99,7 @@ body
     width: 100%;
     height: auto;
     min-height: 35rem;
-    padding: 15rem 0;
+    padding: 5rem 0;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -120,7 +120,8 @@ body
 /*adds gradient */
 .about-section
 {
-    background: linear-gradient(to bottom, #000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0) 100%);
+    background: black;
+    padding-bottom: 5rem;
 }
 
 /*adds space between about text and brands */
@@ -145,6 +146,11 @@ body
 {
     padding: 10rem 0;
 }
+/*defines the maximum width of the images */
+
+.featured-text img {
+    max-width: 100%;
+  }
 
 /*adds space between projects */
 .projects-section .featured-text
@@ -158,7 +164,7 @@ body
 .signup-section
 {
     padding: 10rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000 100%), url("../assets/img/bg-signup.jpeg");
+    background: linear-gradient(to top, #000 0%, rgba(255, 255, 255, 0.5) 75%, #fff 100%), url("../assets/img/bg-signup.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -188,32 +194,39 @@ body
 
 /* controlls the text "LOCALIZAÇÃO, EMAIL AND CONTACTO" */
 .contact-section .card h4,
-.contact-section .card .h4
-{
+.contact-section .card .h4 {
     font-size: 0.8rem;
     font-family: "poppins", "Segoe UI", Roboto, sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-    color: rgb(42, 163, 218);
+    color:rgb(42, 163, 218); /* change the default color to red */
 }
 
 /* controlls the space between the text and icons in contacts */
-.contact-section .card hr
-{
+.contact-section .card hr {
     border-width: 0.05rem;
     color: rgb(42, 163, 218);
 }
 
 /* adds space between the cards for contacts and the social network logos */
-.contact-section .social
-{
+.contact-section .social {
     margin-top: 5rem;
 }
 
-/* turns the text gray when hovered in the contacts section*/
-.contact-section a:hover
-{
-    color: rgb(88, 86, 86);
+/* turns the text blue when hovered in the contacts section*/
+.contact-section a:hover {
+    color: rgb(42, 163, 218); /* change the hover color to blue */
+}
+
+/* sets the default color of the text to red */
+.contact-section .small.text-black-50 a {
+    color: rgb(42, 163, 218);
+}
+
+/* turns the text blue when hovered */
+.contact-section .small.text-black-50 a:hover {
+    color: grey;
+    font-weight: bolder;
 }
 
 /* ---------- SOCIAL NETWORKS---------- */
