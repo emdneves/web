@@ -40,49 +40,47 @@ body {
 
 /* -------------------------------------------------------------NAVBAR------------------------------------------------------------- */
 
-/*backrouund color and height of the navbar */
-
+/* backrouund color and height of the navbar */
 #mainNav {
-    min-height: 3.5rem;
-    background-color: #ffffff;
+  min-height: 3.5rem;
+  background-color: white;
+  transition: background-color 0.5s ease-in-out;
 }
 
-/*controlls the toggler of the navbar */
+/* controlls the toggler of the navbar */
 #mainNav .navbar-toggler {
-    font-size: 80%;
-    padding: 0.75rem;
-    color: rgb(42, 163, 218);
-    border: 1px dotted rgb(42, 163, 218);
+  font-size: 80%;
+  padding: 0.75rem;
+  color: rgb(42, 163, 218);
+  border: 1px dotted rgb(42, 163, 218);
 }
 
-/*controlls the font of the brand top left corner */
+/* controlls the font of the brand top left corner */
 #mainNav .navbar-brand {
-    color: rgb(42, 163, 218);
-    font-weight: 700;
-    padding: 0.9rem 0;
-    max-height: 30px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+  color: rgb(42, 163, 218);
+  font-weight: 700;
+  padding: 0.9rem 0;
+  max-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 #mainNav .navbar-brand:hover {
-    
-    text-shadow: 0 0 5px #2aa3da, 0 0 5px #2aa3da, 0 0 15px #2aa3da;
-    color: white;
+  text-shadow: 0 0 5px #2aa3da, 0 0 5px #2aa3da, 0 0 15px #2aa3da;
+  color: white;
 }
-
 
 #mainNav .navbar-nav .nav-item:active,
 #mainNav .navbar-nav .nav-item:focus {
-    outline: none;
-    background-color: transparent;
+  outline: none;
+  background-color: transparent;
 }
 
 #mainNav .nav-link:hover {
-    color: rgb(42, 163, 218);
-    font-weight: bolder;
+  color: rgb(42, 163, 218);
+  font-weight: bolder;
 }
 
 /* -------------------------------------------------------------COVER------------------------------------------------------------- */
@@ -132,52 +130,6 @@ body {
     margin-bottom: 5rem;
 }
 
-/* -------------------------------------------------------------BRANDS------------------------------------------------------------- */
-
-#brands .card {
-    height: 18rem;
-    margin-bottom: 20px;
-    background-color: transparent;
-    border: none;
-  }
-  
-  #brands .card-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
-  
-  #brands .card-text {
-    color: rgb(42, 163, 218);
-  }
-  
-  #brands .card:hover .card-text {
-    color: grey;
-  }
-  
-  #brands .row-cols-auto > .col {
-    margin: 0 10px;
-  }
-  
-  @media (max-width: 768px) {
-    #brands .row.row-cols-auto > .col {
-      margin-bottom: 1rem;
-    }
-    #brands .card {
-      margin-bottom: 30px;
-    }
-  }
-  
-  #brands .card-img-top {
-    max-height: 150px;
-    object-fit: contain;
-    margin: 0 auto;
-  }
-  
-  
-  
-  
   
   
 
@@ -332,6 +284,59 @@ body {
     color: grey;
     font-weight: bolder;
 }
+
+
+/* -------------------------------------------------------------BRANDS------------------------------------------------------------- */
+
+#brands .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#brands .col-md-1 {
+  flex: 1;
+  max-width: calc(100% / 8);
+}
+
+#brands .card {
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+  background-color: black;
+  width: 100%;
+}
+
+#brands .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+}
+
+#brands .card .card-img-top {
+  max-height: 50%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+#brands .card .card-body {
+  padding: 10px;
+}
+
+#brands .card p.card-text {
+  font-size: 14px;
+  margin: 0;
+}
+
+#brands .line {
+  margin: 20px auto 0;
+  width: 80%;
+  height: 1px;
+  background-color: #ffffff;
+  border: none;
+}
+
 
 /* ------------------------------------------------------------- SOCIAL NETWORKS------------------------------------------------------------- */
 
