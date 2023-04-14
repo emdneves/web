@@ -116,7 +116,6 @@ body
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
-
   background-size: cover;
 }
 
@@ -203,8 +202,6 @@ body
   }
 }
 
-
-
 /* -------------------------------------------------------------PROJECTS------------------------------------------------------------- */
 
 #projects .card
@@ -216,7 +213,6 @@ body
   border-radius: 0;
   border: none;
 }
-
 
 #projects .card-body
 {
@@ -231,14 +227,10 @@ body
   color: rgb(42, 163, 218);
 }
 
-
-
 #projects .card:hover .card-text
 {
   color: white;
 }
-
-
 
 #projects .row-cols-auto>.col
 {
@@ -258,17 +250,14 @@ body
   }
 }
 
-
-
 /* -------------------------------------------------------------DEGRADEE------------------------------------------------------------- */
 
 .degradee-section
 {
-  height: 500px;
+  height: 200px;
   /* Set the height to 500 pixels */
   background: linear-gradient(to bottom, black, white);
 }
-
 
 /* -------------------------------------------------------------FORM------------------------------------------------------------- */
 
@@ -313,7 +302,6 @@ body
   text-transform: uppercase;
   letter-spacing: 0.15rem;
   color: rgb(42, 163, 218);
-  /* change the default color to red */
 }
 
 /* controlls the space between the text and icons in contacts */
@@ -349,7 +337,6 @@ body
   font-weight: bolder;
 }
 
-
 /* -------------------------------------------------------------BRANDS------------------------------------------------------------- */
 
 #brands .row
@@ -373,7 +360,7 @@ body
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
   background-color: black;
-  width: 100%;
+  max-width: 100%;
 }
 
 #brands .card:hover
@@ -384,8 +371,8 @@ body
 
 #brands .card .card-img-top
 {
-  max-height: 50%;
-  max-width: 50%;
+
+  max-width: 70px;
   margin: 0 auto;
 }
 
@@ -409,11 +396,7 @@ body
   border: none;
 }
 
-
 /* ------------------------------------------------------------- SOCIAL NETWORKS------------------------------------------------------------- */
-
-/* turns the text blue when hovered in the contacts section*/
-
 
 /* controlls the position of the section for the social network logos */
 .social
@@ -424,7 +407,8 @@ body
 }
 
 /* turns the icons grey when hovered */
-.social a:hover i {
+.social a:hover i
+{
   filter: grayscale(100%);
   color: white;
 }
