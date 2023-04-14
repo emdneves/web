@@ -209,7 +209,7 @@ body
   height: 18rem;
   margin-bottom: 20px;
   border: none;
-  background-color: white;
+  background-color: red;
   border-radius: 0;
   border: none;
 }
@@ -285,11 +285,7 @@ body
   border: 0;
 }
 
-/* adds space between cards and background image*/
-.contact-section
-{
-  padding-top: 5rem;
-}
+
 
 /* -------------------------------------------------------------CONTACTS------------------------------------------------------------- */
 
@@ -309,12 +305,6 @@ body
 {
   border-width: 0.05rem;
   color: rgb(42, 163, 218);
-}
-
-/* adds space between the cards for contacts and the social network logos */
-.contact-section .social
-{
-  margin-top: 5rem;
 }
 
 /* turns the text blue when hovered in the contacts section*/
@@ -358,7 +348,6 @@ body
   border: none;
   transition: all 0.3s ease;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
   background-color: black;
   max-width: 100%;
 }
@@ -378,7 +367,7 @@ body
 
 #brands .card .card-body
 {
-  padding: 10px;
+  padding: 1px;
 }
 
 #brands .card p.card-text
@@ -389,7 +378,7 @@ body
 
 #brands .line
 {
-  margin: 20px auto 0;
+  margin: 10px auto 0;
   width: 80%;
   height: 1px;
   background-color: #ffffff;
@@ -427,12 +416,12 @@ body
   align-items: center;
   height: 3rem;
   width: 3rem;
-  background: rgba(255, 255, 255, 0.1);
+  background: red(255, 255, 255, 0.1);
   border-radius: 100%;
 }
 
 /* adds space between the watermark and the social network logos */
 .footer
 {
-  padding: 5rem 0;
+  padding: 1rem 0;
 }
