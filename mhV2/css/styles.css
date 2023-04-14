@@ -1,54 +1,58 @@
 @charset "UTF-8";
 
-
-
-
 /* The scroll-padding-top property specifies how much padding should be added on top of the scroll snap container before it starts to scroll. 
 It's used to ensure that the scroll snap container is fully visible within the viewport when snapped.
 
 In this case, the value of calc(4.5rem - 1px) is being used, which means that the padding on the top of the HTML element will be 4.5 rem minus 1 pixel. 
 This ensures that there is enough space at the top of the viewport for the navigation bar or other fixed elements, while still allowing the scroll snap container to be fully visible.
  */
-html {
-    scroll-padding-top: calc(4.5rem - 1px);
+html
+{
+  scroll-padding-top: calc(4.5rem - 1px);
 }
 
 /* changes the cursor style !!!not working!!! */
-body {
-    cursor: url('mhV2\assets\iconmonstr-cursor-32.svg'), auto;
-    background-color: #000;
+body
+{
+  cursor: url('mhV2\assets\iconmonstr-cursor-32.svg'), auto;
+  background-color: #000;
 }
 
-svg {
-    width: 25vw;
-    /* 1/4 of the viewport width */
-    height: auto;
-    /* maintain aspect ratio */
+svg
+{
+  width: 25vw;
+  /* 1/4 of the viewport width */
+  height: auto;
+  /* maintain aspect ratio */
 }
 
 /*defines the font poppins for all body */
-body {
-    letter-spacing: 0.0625em;
-    font-family: 'poppins';
+body
+{
+  letter-spacing: 0.0625em;
+  font-family: 'poppins';
 }
 
-.line {
-    border: none;
-    height: 1px;
-    background-color: rgb(42, 163, 218);
-  }
+.line
+{
+  border: none;
+  height: 1px;
+  background-color: rgb(42, 163, 218);
+}
 
 /* -------------------------------------------------------------NAVBAR------------------------------------------------------------- */
 
 /* backrouund color and height of the navbar */
-#mainNav {
+#mainNav
+{
   min-height: 3.5rem;
   background-color: white;
   transition: background-color 0.5s ease-in-out;
 }
 
 /* controlls the toggler of the navbar */
-#mainNav .navbar-toggler {
+#mainNav .navbar-toggler
+{
   font-size: 80%;
   padding: 0.75rem;
   color: rgb(42, 163, 218);
@@ -56,7 +60,8 @@ body {
 }
 
 /* controlls the font of the brand top left corner */
-#mainNav .navbar-brand {
+#mainNav .navbar-brand
+{
   color: rgb(42, 163, 218);
   font-weight: 700;
   padding: 0.9rem 0;
@@ -67,18 +72,21 @@ body {
   height: 100%;
 }
 
-#mainNav .navbar-brand:hover {
+#mainNav .navbar-brand:hover
+{
   text-shadow: 0 0 5px #2aa3da, 0 0 5px #2aa3da, 0 0 15px #2aa3da;
   color: white;
 }
 
 #mainNav .navbar-nav .nav-item:active,
-#mainNav .navbar-nav .nav-item:focus {
+#mainNav .navbar-nav .nav-item:focus
+{
   outline: none;
   background-color: transparent;
 }
 
-#mainNav .nav-link:hover {
+#mainNav .nav-link:hover
+{
   color: rgb(42, 163, 218);
   font-weight: bolder;
 }
@@ -86,250 +94,314 @@ body {
 /* -------------------------------------------------------------COVER------------------------------------------------------------- */
 
 /*adds image and linear gradient */
-.btn {
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    padding: 1.25rem 2rem;
-    font-family: "poppins", "Segoe UI", Roboto, sans-serif;
-    font-size: 80%;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    border: 0;
+.btn
+{
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  font-family: "poppins", "Segoe UI", Roboto, sans-serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
 }
 
 /*controlls font size beneath logo */
-.masthead {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 35rem;
-    padding: 5rem 0;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
+.masthead
+{
+  position: relative;
+  width: 100%;
+  height: auto;
+  min-height: 35rem;
+  padding: 5rem 0;
+  padding-top: 125px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-size: cover;
 }
 
 /*controlls font size beneath logo */
 .masthead h2,
-.masthead .h2 {
-    max-width: 20rem;
-    font-size: 1rem;
+.masthead .h2
+{
+  max-width: 20rem;
+  font-size: 1rem;
 }
 
 /* -------------------------------------------------------------ABOUT------------------------------------------------------------- */
 
 /*adds gradient */
-.about-section {
-    background: black;
-    padding-bottom: 5rem;
+.about-section
+{
+  background: black;
+  padding-bottom: 5rem;
 }
-
-/*adds space between about text and brands */
-.about-section p {
-    margin-bottom: 5rem;
-}
-
-  
-  
 
 /* -------------------------------------------------------------SERVICES------------------------------------------------------------- */
 
-#services .card {
-    height: 18rem;
-    margin-bottom: 20px;
-  }
-  
-#services .card {
-    border: none;
-    background-color: transparent;
+#services .card
+{
+  height: 18rem;
+  margin-bottom: 20px;
 }
 
-  #services .card-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+#services .card
+{
+  border: none;
+  background-color: transparent;
+}
+
+#services .card-body
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+#services .card-text
+{
+  color: rgb(42, 163, 218);
+}
+
+#services .fa-solid
+{
+  color: rgb(42, 163, 218);
+  font-size: 6rem;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#services .card:hover .card-text
+{
+  color: white;
+}
+
+#services .card:hover .fa-solid
+{
+  color: white;
+}
+
+#services .row-cols-auto>.col
+{
+  margin: 0 10px;
+}
+
+@media (max-width: 768px)
+{
+  #services .row.row-cols-auto>.col
+  {
+    margin-bottom: 1rem;
   }
-  
-  #services .card-text {
-    color: rgb(42, 163, 218);
+
+  #services .card
+  {
+    margin-bottom: 30px;
   }
-  
-  #services .fa-solid {
-    color: rgb(42, 163, 218);
-    font-size: 6rem;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
-  }
-  
-  #services .card:hover .card-text {
-    color: grey;
-  }
-  
-  #services .card:hover .fa-solid {
-    color: grey;
-  }
-  
-  #services .row-cols-auto > .col {
-    margin: 0 10px;
-  }
-  
-  @media (max-width: 768px) {
-    #services .row.row-cols-auto > .col {
-      margin-bottom: 1rem;
-    }
-    #services .card {
-      margin-bottom: 30px;
-    }
-  }
-  
+}
+
 
 
 /* -------------------------------------------------------------PROJECTS------------------------------------------------------------- */
 
-/*adds space between brands and projects */
-.projects-section {
-    padding: 10rem 0;
+#projects .card
+{
+  height: 18rem;
+  margin-bottom: 20px;
+  border: none;
+  background-color: white;
+  border-radius: 0;
+  border: none;
 }
-/*defines the maximum width of the images */
 
-.featured-text img {
-    max-width: 100%;
+
+#projects .card-body
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-/*adds space between projects */
-.projects-section .featured-text {
-    padding: 2rem;
+#projects .card-text
+{
+  color: rgb(42, 163, 218);
 }
+
+
+
+#projects .card:hover .card-text
+{
+  color: white;
+}
+
+
+
+#projects .row-cols-auto>.col
+{
+  margin: 0 10px;
+}
+
+@media (max-width: 768px)
+{
+  #projects .row.row-cols-auto>.col
+  {
+    margin-bottom: 1rem;
+  }
+
+  #projects .card
+  {
+    margin-bottom: 30px;
+  }
+}
+
 
 
 /* -------------------------------------------------------------DEGRADEE------------------------------------------------------------- */
 
-.degradee-section {
-    height: 500px; /* Set the height to 500 pixels */
-    background: linear-gradient(to bottom, black, white); 
+.degradee-section
+{
+  height: 500px;
+  /* Set the height to 500 pixels */
+  background: linear-gradient(to bottom, black, white);
 }
 
 
 /* -------------------------------------------------------------FORM------------------------------------------------------------- */
 
 /*adds backgorund image with gradient */
-.signup-section {
-    padding: 10rem 0;
-    background: linear-gradient(to top, #000 0%, rgba(255, 255, 255, 0.5) 75%, #fff 100%), url("../assets/img/bg-signup.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-size: cover;
+.signup-section
+{
+  padding: 10rem 0;
+  background: linear-gradient(to top, #000 0%, rgba(255, 255, 255, 0.5) 75%, #fff 100%), url("../assets/img/bg-signup.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 /*constrolls the input button */
-.signup-section .form-signup input {
-    box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-    padding: 1.25rem 2rem;
-    height: auto;
-    font-family: "poppins", "Segoe UI", Roboto, sans-serif;
-    font-size: 80%;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    border: 0;
+.signup-section .form-signup input
+{
+  box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
+  padding: 1.25rem 2rem;
+  height: auto;
+  font-family: "poppins", "Segoe UI", Roboto, sans-serif;
+  font-size: 80%;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  border: 0;
 }
 
 /* adds space between cards and background image*/
-.contact-section {
-    padding-top: 5rem;
+.contact-section
+{
+  padding-top: 5rem;
 }
 
 /* -------------------------------------------------------------CONTACTS------------------------------------------------------------- */
 
 /* controlls the text "LOCALIZAÇÃO, EMAIL AND CONTACTO" */
 .contact-section .card h4,
-.contact-section .card .h4 {
-    font-size: 0.8rem;
-    font-family: "poppins", "Segoe UI", Roboto, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.15rem;
-    color: rgb(42, 163, 218);
-    /* change the default color to red */
+.contact-section .card .h4
+{
+  font-size: 0.8rem;
+  font-family: "poppins", "Segoe UI", Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color: rgb(42, 163, 218);
+  /* change the default color to red */
 }
 
 /* controlls the space between the text and icons in contacts */
-.contact-section .card hr {
-    border-width: 0.05rem;
-    color: rgb(42, 163, 218);
+.contact-section .card hr
+{
+  border-width: 0.05rem;
+  color: rgb(42, 163, 218);
 }
 
 /* adds space between the cards for contacts and the social network logos */
-.contact-section .social {
-    margin-top: 5rem;
+.contact-section .social
+{
+  margin-top: 5rem;
 }
 
 /* turns the text blue when hovered in the contacts section*/
-.contact-section a:hover {
-    color: rgb(42, 163, 218);
-    /* change the hover color to blue */
+.contact-section a:hover
+{
+  color: rgb(42, 163, 218);
+  /* change the hover color to blue */
 }
 
 /* sets the default color of the text to red */
-.contact-section .small.text-black-50 a {
-    color: rgb(42, 163, 218);
+.contact-section .small.text-black-50 a
+{
+  color: rgb(42, 163, 218);
 }
 
 /* turns the text blue when hovered */
-.contact-section .small.text-black-50 a:hover {
-    color: grey;
-    font-weight: bolder;
+.contact-section .small.text-black-50 a:hover
+{
+  color: white;
+  font-weight: bolder;
 }
 
 
 /* -------------------------------------------------------------BRANDS------------------------------------------------------------- */
 
-#brands .row {
+#brands .row
+{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-#brands .col-md-1 {
+#brands .col-md-1
+{
   flex: 1;
   max-width: calc(100% / 8);
 }
 
-#brands .card {
+#brands .card
+{
   border: none;
   transition: all 0.3s ease;
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
   background-color: black;
   width: 100%;
 }
 
-#brands .card:hover {
+#brands .card:hover
+{
   transform: translateY(-5px);
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.5);
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-#brands .card .card-img-top {
+#brands .card .card-img-top
+{
   max-height: 50%;
   max-width: 50%;
   margin: 0 auto;
 }
 
-#brands .card .card-body {
+#brands .card .card-body
+{
   padding: 10px;
 }
 
-#brands .card p.card-text {
+#brands .card p.card-text
+{
   font-size: 14px;
   margin: 0;
 }
 
-#brands .line {
+#brands .line
+{
   margin: 20px auto 0;
   width: 80%;
   height: 1px;
@@ -344,34 +416,39 @@ body {
 
 
 /* controlls the position of the section for the social network logos */
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* turns the icons grey when hovered */
-.social a:hover {
-    filter: grayscale(100%);
+.social a:hover i {
+  filter: grayscale(100%);
+  color: white;
 }
 
 /* makes the icons 20% bigger when hovered */
-.contact-section .social a:hover {
-    transform: scale(1.2);
+.contact-section .social a:hover
+{
+  transform: scale(1.2);
 }
 
 /* controlls the section for the social network logos */
-.contact-section .social a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 3rem;
-    width: 3rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 100%;
+.contact-section .social a
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
 }
 
 /* adds space between the watermark and the social network logos */
-.footer {
-    padding: 5rem 0;
+.footer
+{
+  padding: 5rem 0;
 }
