@@ -136,136 +136,168 @@ body
   padding-bottom: 5rem;
 }
 
+
 /* -------------------------------------------------------------SERVICES------------------------------------------------------------- */
 
-#services .card
-{
-  height: 18rem;
-  margin-bottom: 20px;
-}
-
-#services .card
-{
+#services .card {
   border: none;
   background-color: transparent;
 }
 
-#services .card-body
-{
+#services h5 {
+  color: white;
+}
+
+#services .card-body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  flex-direction: column;
 }
 
-#services .card-text
-{
+#services .card-text {
   color: rgb(42, 163, 218);
+  margin-top: 20px;
 }
 
-#services .fa-solid
-{
+#services .fa-solid {
   color: rgb(42, 163, 218);
   font-size: 6rem;
-  padding: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px;
 }
 
-#services .card:hover .card-text
-{
-  color: white;
+#services ul {
+  margin-top: 20px;
+  list-style-type: none;
+  font-size: 1rem; /* set font size here */
 }
 
-#services .card:hover .fa-solid
-{
-  color: white;
+.list-group-item {
+  font-size: 14px !important; 
 }
 
-#services .row-cols-auto>.col
-{
-  margin: 0 10px;
-}
-
-@media (max-width: 768px)
-{
-  #services .row.row-cols-auto>.col
-  {
-    margin-bottom: 1rem;
-  }
-
-  #services .card
-  {
-    margin-bottom: 30px;
-  }
-}
-
-/* -------------------------------------------------------------PROJECTS------------------------------------------------------------- */
-
-#projects .card
-{
-  height: 18rem;
-  margin-bottom: 20px;
-  border: none;
-  background-color: white;
-  border-radius: 0;
-  border: none;
-}
-
-#projects .card-body
-{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-
-#projects .card-text
-{
+#services li {
   color: rgb(42, 163, 218);
 }
 
-#projects .card:hover .card-text
-{
+
+
+#services .list-group-item {
+  text-align: left;
+  background-color: transparent;
+  border-color: black;
+  margin-bottom: 10px;
+}
+
+#services .card:hover .card-text {
   color: white;
 }
 
-#projects .row-cols-auto>.col
-{
-  margin: 0 10px;
+#services .card:hover .fa-solid {
+  color: white;
 }
 
-@media (max-width: 768px)
-{
-  #projects .row.row-cols-auto>.col
-  {
+@media (max-width: 768px) {
+  #services .row.row-cols-auto > .col {
     margin-bottom: 1rem;
   }
-
-  #projects .card
-  {
+  #services .card {
     margin-bottom: 30px;
   }
 }
 
-/* -------------------------------------------------------------DEGRADEE------------------------------------------------------------- */
+    
+/* -------------------------------------------------------------PROJECTS------------------------------------------------------------- */
 
-.degradee-section
-{
-  height: 200px;
-  /* Set the height to 500 pixels */
-  background: linear-gradient(to bottom, black, white);
+#projects .row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
 }
+
+#projects .card {
+  background-color: transparent;
+  border-radius: 0;
+  position: relative;
+  height: 100%;
+}
+
+#projects .card-header {
+  margin-top: 10px;
+  text-align: center;
+  height: 20%;
+}
+
+#projects .card-title {
+  color: rgb(42, 163, 218);
+  font-size: 1rem;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  height: 80%;
+}
+
+#projects .card-text {
+  color: rgb(42, 163, 218);
+  font-size: 0.7rem;
+  margin-top: 10px;
+  height: 20%;
+}
+
+#projects .card:hover .card-text {
+  color: white;
+}
+
+#projects .row-cols-auto>.col {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  #projects .row.row-cols-auto>.col {
+    margin-bottom: 1rem;
+  }
+
+  #projects .card {
+    margin-bottom: 30px;
+    height: unset;
+  }
+
+  #projects .card-header {
+    height: unset;
+  }
+
+  #projects .card-title {
+    height: unset;
+  }
+
+  #projects .card-body {
+    height: unset;
+  }
+
+  #projects .card-text {
+    height: unset;
+  }
+}
+
 
 /* -------------------------------------------------------------FORM------------------------------------------------------------- */
 
-/*adds backgorund image with gradient */
+/*adds signup */
 .signup-section
 {
   padding: 10rem 0;
-  background: linear-gradient(to top, #000 0%, rgba(255, 255, 255, 0.5) 75%, #fff 100%), url("../assets/img/bg-signup.jpeg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -276,7 +308,6 @@ body
 .signup-section .form-signup input
 {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgba(0, 0, 0, 0.1) !important;
-  padding: 1.25rem 2rem;
   height: auto;
   font-family: "poppins", "Segoe UI", Roboto, sans-serif;
   font-size: 80%;
@@ -285,57 +316,7 @@ body
   border: 0;
 }
 
-/* adds space between cards and background image*/
-.contact-section
-{
-  padding-top: 5rem;
-}
 
-/* -------------------------------------------------------------CONTACTS------------------------------------------------------------- */
-
-/* controlls the text "LOCALIZAÇÃO, EMAIL AND CONTACTO" */
-.contact-section .card h4,
-.contact-section .card .h4
-{
-  font-size: 0.8rem;
-  font-family: "poppins", "Segoe UI", Roboto, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.15rem;
-  color: rgb(42, 163, 218);
-}
-
-/* controlls the space between the text and icons in contacts */
-.contact-section .card hr
-{
-  border-width: 0.05rem;
-  color: rgb(42, 163, 218);
-}
-
-/* adds space between the cards for contacts and the social network logos */
-.contact-section .social
-{
-  margin-top: 5rem;
-}
-
-/* turns the text blue when hovered in the contacts section*/
-.contact-section a:hover
-{
-  color: rgb(42, 163, 218);
-  /* change the hover color to blue */
-}
-
-/* sets the default color of the text to red */
-.contact-section .small.text-black-50 a
-{
-  color: rgb(42, 163, 218);
-}
-
-/* turns the text blue when hovered */
-.contact-section .small.text-black-50 a:hover
-{
-  color: white;
-  font-weight: bolder;
-}
 
 /* -------------------------------------------------------------BRANDS------------------------------------------------------------- */
 
@@ -358,8 +339,6 @@ body
   border: none;
   transition: all 0.3s ease;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  margin-bottom: 20px;
-  background-color: black;
   max-width: 100%;
 }
 
@@ -376,52 +355,33 @@ body
   margin: 0 auto;
 }
 
-#brands .card .card-body
-{
-  padding: 10px;
+/* -------------------------------------------------------------CONTACT------------------------------------------------------------- */
+
+.contact-section {
+  padding-top: 5rem;
 }
-
-#brands .card p.card-text
-{
-  font-size: 14px;
-  margin: 0;
+.contact-section .card {
+  border: 0;
+  border-bottom: 0.25rem solid rgb(42, 163, 218);
 }
-
-#brands .line
-{
-  margin: 20px auto 0;
-  width: 80%;
-  height: 1px;
-  background-color: #ffffff;
-  border: none;
+.contact-section .card h4, .contact-section .card .h4 {
+  font-size: 0.8rem;
+  font-family: "poppins", "Segoe UI", Roboto, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  color:  rgb(42, 163, 218);
 }
-
-/* ------------------------------------------------------------- SOCIAL NETWORKS------------------------------------------------------------- */
-
-/* controlls the position of the section for the social network logos */
-.social
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.contact-section .card hr {
+  opacity: 1;
+  border-color: rgb(42, 163, 218), 0.3;
+  border-width: 0.25rem;
+  width: 3rem;
+  color:  rgb(42, 163, 218);
 }
-
-/* turns the icons grey when hovered */
-.social a:hover i
-{
-  filter: grayscale(100%);
-  color: white;
+.contact-section .social {
+  margin-top: 5rem;
 }
-
-/* makes the icons 20% bigger when hovered */
-.contact-section .social a:hover
-{
-  transform: scale(1.2);
-}
-
-/* controlls the section for the social network logos */
-.contact-section .social a
-{
+.contact-section .social a {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -429,10 +389,37 @@ body
   width: 3rem;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 100%;
+  color: rgb(42, 163, 218);
 }
 
-/* adds space between the watermark and the social network logos */
-.footer
-{
-  padding: 5rem 0;
+.contact-section .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* -------------------------------------------------------------SOCIAL------------------------------------------------------------- */
+
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .social a:hover i {
+    transform: scale(1.2);
+  }
+  
+
+.contact-section .card-body i,
+.contact-section .card-body a,
+.contact-section .social a {
+  color: rgb(42, 163, 218);
+}
+
+
+.footer {
+  padding: 1rem 0;
 }
