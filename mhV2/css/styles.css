@@ -139,28 +139,33 @@ body
 
 /* -------------------------------------------------------------SERVICES------------------------------------------------------------- */
 
-#services .card {
+#services .card
+{
   border: none;
   background-color: transparent;
 }
 
-#services h5 {
+#services h5
+{
   color: white;
 }
 
-#services .card-body {
+#services .card-body
+{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-#services .card-text {
+#services .card-text
+{
   color: rgb(42, 163, 218);
   margin-top: 20px;
 }
 
-#services .fa-solid {
+#services .fa-solid
+{
   color: rgb(42, 163, 218);
   font-size: 6rem;
   display: flex;
@@ -169,69 +174,84 @@ body
   margin-top: 50px;
 }
 
-#services ul {
+#services ul
+{
   margin-top: 20px;
   list-style-type: none;
-  font-size: 1rem; /* set font size here */
+  font-size: 1rem;
+  /* set font size here */
 }
 
-.list-group-item {
-  font-size: 14px !important; 
+.list-group-item
+{
+  font-size: 14px !important;
 }
 
-#services li {
+#services li
+{
   color: rgb(42, 163, 218);
 }
 
 
 
-#services .list-group-item {
+#services .list-group-item
+{
   text-align: left;
   background-color: transparent;
   border-color: black;
   margin-bottom: 10px;
 }
 
-#services .card:hover .card-text {
+#services .card:hover .card-text
+{
   color: white;
 }
 
-#services .card:hover .fa-solid {
+#services .card:hover .fa-solid
+{
   color: white;
 }
 
-@media (max-width: 768px) {
-  #services .row.row-cols-auto > .col {
+@media (max-width: 768px)
+{
+  #services .row.row-cols-auto>.col
+  {
     margin-bottom: 1rem;
   }
-  #services .card {
+
+  #services .card
+  {
     margin-bottom: 30px;
   }
 }
 
-    
+
 /* -------------------------------------------------------------PROJECTS------------------------------------------------------------- */
 
-#projects .row {
+#projects .row
+{
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
 }
 
-#projects .card {
+#projects .card
+{
   background-color: transparent;
   border-radius: 0;
   position: relative;
   height: 100%;
 }
 
-#projects .card-header {
+#projects .card-header
+{
   margin-top: 10px;
   text-align: center;
   height: 20%;
 }
 
-#projects .card-title {
+#projects .card-title
+{
   color: rgb(42, 163, 218);
   font-size: 1rem;
   height: 60%;
@@ -240,7 +260,8 @@ body
   justify-content: center;
 }
 
-#projects .card-body {
+#projects .card-body
+{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -249,44 +270,54 @@ body
   height: 80%;
 }
 
-#projects .card-text {
+#projects .card-text
+{
   color: rgb(42, 163, 218);
   font-size: 0.7rem;
   margin-top: 10px;
   height: 20%;
 }
 
-#projects .card:hover .card-text {
+#projects .card:hover .card-text
+{
   color: white;
 }
 
-#projects .row-cols-auto>.col {
+#projects .row-cols-auto>.col
+{
   margin: 0 10px;
 }
 
-@media (max-width: 768px) {
-  #projects .row.row-cols-auto>.col {
+@media (max-width: 768px)
+{
+  #projects .row.row-cols-auto>.col
+  {
     margin-bottom: 1rem;
   }
 
-  #projects .card {
+  #projects .card
+  {
     margin-bottom: 30px;
     height: unset;
   }
 
-  #projects .card-header {
+  #projects .card-header
+  {
     height: unset;
   }
 
-  #projects .card-title {
+  #projects .card-title
+  {
     height: unset;
   }
 
-  #projects .card-body {
+  #projects .card-body
+  {
     height: unset;
   }
 
-  #projects .card-text {
+  #projects .card-text
+  {
     height: unset;
   }
 }
@@ -357,31 +388,43 @@ body
 
 /* -------------------------------------------------------------CONTACT------------------------------------------------------------- */
 
-.contact-section {
+.contact-section
+{
   padding-top: 5rem;
 }
-.contact-section .card {
+
+.contact-section .card
+{
   border: 0;
   border-bottom: 0.25rem solid rgb(42, 163, 218);
 }
-.contact-section .card h4, .contact-section .card .h4 {
+
+.contact-section .card h4,
+.contact-section .card .h4
+{
   font-size: 0.8rem;
   font-family: "poppins", "Segoe UI", Roboto, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  color:  rgb(42, 163, 218);
+  color: rgb(42, 163, 218);
 }
-.contact-section .card hr {
+
+.contact-section .card hr
+{
   opacity: 1;
   border-color: rgb(42, 163, 218), 0.3;
   border-width: 0.25rem;
   width: 3rem;
-  color:  rgb(42, 163, 218);
+  color: rgb(42, 163, 218);
 }
-.contact-section .social {
+
+.contact-section .social
+{
   margin-top: 5rem;
 }
-.contact-section .social a {
+
+.contact-section .social a
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,34 +435,39 @@ body
   color: rgb(42, 163, 218);
 }
 
-.contact-section .card-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
+.contact-section .card-body
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-  /* -------------------------------------------------------------SOCIAL------------------------------------------------------------- */
+/* -------------------------------------------------------------SOCIAL------------------------------------------------------------- */
 
 
-.social {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.social
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .social a:hover i {
-    transform: scale(1.2);
-  }
-  
+.social a:hover i
+{
+  transform: scale(1.2);
+}
+
 
 .contact-section .card-body i,
 .contact-section .card-body a,
-.contact-section .social a {
+.contact-section .social a
+{
   color: rgb(42, 163, 218);
 }
 
 
-.footer {
+.footer
+{
   padding: 1rem 0;
 }
